@@ -1,0 +1,71 @@
+@font-face {
+    font-family: Regular;
+    src: url("../font/Orbitron-Regular.ttf");
+}body{
+    padding: 0;
+    margin: 0;
+}
+/* .spOpretors{display: none;} */
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(204, 238, 238, 0.76) ;
+}
+.calculator{
+    background-color: rgba(0, 0, 0, 0.886);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+
+    border: 5px solid rgba(39, 40, 40, 0.496) ;
+    box-shadow: rgb(81, 200, 200) 4px 4px 10px, rgb(81, 200, 200) -4px -4px 10px;
+
+}
+.calculator input[type=button] {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 15px;
+    color: white;
+    margin: 5px;
+    border: none;
+    box-shadow: rgba(143, 219, 217, 0.747) 1px 1px 4px,rgba(167, 204, 203, 0.747) -1px -1px 4px ;
+    background-color: rgba(40, 41, 41, 0.925)   ;
+}
+
+.calculator input[type=text]{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(212, 213, 173);
+    border: none;
+    box-shadow: rgba(249, 242, 116, 0.747) 0 0 5px;
+    border-radius: 5px;
+    text-align: right;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    flex: 1;
+    width: 0;
+    margin-bottom: 30px;
+    font-family: Regular;
+}
+#equalto{
+    background-color: red;
+    box-shadow: none;
+}
+.display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+/* hover */
+.calculator input[type=button]:hover{
+    width: 59px;
+    height: 59px;
+    font-size: 14px;
+    color:aqua;
+}
